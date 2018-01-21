@@ -1,0 +1,33 @@
+# /etc/conf.d/gdcoind: config file for /etc/init.d/gdcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/gdcoincore/gdcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/gdcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/gdcoind.pid"
+
+# Where to write gdcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/gdcoind"
+
+# User and group to own gdcoind process
+#BITCOIND_USER="gdcoincore"
+#BITCOIND_GROUP="gdcoincore"
+
+# Path to gdcoind executable
+#BITCOIND_BIN="/usr/bin/gdcoind"
+
+# Nice value to run gdcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

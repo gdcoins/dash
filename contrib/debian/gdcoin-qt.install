@@ -1,0 +1,6 @@
+usr/local/bin/gdcoin-qt usr/bin
+share/pixmaps/gdcoin32.xpm usr/share/pixmaps
+share/pixmaps/gdcoin16.xpm usr/share/pixmaps
+share/pixmaps/gdcoin128.png usr/share/pixmaps
+debian/gdcoin-qt.desktop usr/share/applications
+debian/gdcoin-qt.protocol usr/share/kde4/services/

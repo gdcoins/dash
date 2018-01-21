@@ -1,0 +1,22 @@
+[Unit]
+Description=Gdcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=gdcoincore
+Group=gdcoincore
+
+Type=forking
+PIDFile=/var/lib/gdcoind/gdcoind.pid
+ExecStart=/usr/bin/gdcoind -daemon -pid=/var/lib/gdcoind/gdcoind.pid \
+-conf=/etc/gdcoincore/gdcoin.conf -datadir=/var/lib/gdcoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

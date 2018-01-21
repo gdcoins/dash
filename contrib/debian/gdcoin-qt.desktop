@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gdcoin
+Comment=Gdcoin P2P Cryptocurrency
+Comment[fr]=Gdcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Gdcoin, eşten eşe kriptografik sanal para birimi
+Exec=gdcoin-qt %u
+Terminal=false
+Type=Application
+Icon=gdcoin128
+MimeType=x-scheme-handler/gdcoin;
+Categories=Office;Finance;

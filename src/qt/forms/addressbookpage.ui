@@ -137,7 +137,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../dash.qrc"/>
+  <include location="../gdcoin.qrc"/>
  </resources>
  <connections/>
 </ui>
